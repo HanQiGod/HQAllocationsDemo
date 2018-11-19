@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HQFlowImageCell.h
 //  HQAllocationsDemo
 //
 //  Created by Mr_Han on 2018/11/19.
@@ -10,8 +10,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface HQFlowImageCell : UICollectionViewCell
+
+@property (strong, nonatomic) UIImageView * imageView;
 
 @end
 
+NS_ASSUME_NONNULL_END

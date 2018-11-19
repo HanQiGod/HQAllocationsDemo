@@ -2,11 +2,14 @@
 //  AppDelegate.m
 //  HQAllocationsDemo
 //
-//  Created by 君凯商联网 on 2018/11/19.
-//  Copyright © 2018 君凯商联网. All rights reserved.
+//  Created by Mr_Han on 2018/11/19.
+//  Copyright © 2018 Mr_Han. All rights reserved.
+//  CSDN <https://blog.csdn.net/u010960265>
+//  GitHub <https://github.com/HanQiGod>
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    ViewController *vc = [ViewController new];
+    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:vc];
+    self.window.rootViewController = navi;
+    [self.window makeKeyWindow];
+    
     return YES;
 }
 
